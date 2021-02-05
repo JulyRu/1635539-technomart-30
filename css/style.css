@@ -1,0 +1,301 @@
+/*Variables */
+
+:root {
+  --dark-blue: #293449;    
+  --red: #EE3643;          
+  --green: #63A63E;        
+  --blue: #32425C;         
+  --orange: #FFBF47;        
+  --light-blue: #3BBCE3;   
+  --purple: #DC91D8;
+  --light-green: #8ED78F;
+  --light-orange: #FFC047;
+  --grey:#A9A9A9; 
+  --yellow:#FFD180;
+  --light-brown: #F9F5F0;  
+  --light-grey: #F1F5F7;   
+  --basic-white: #FFFFFF;
+  --basic-black: #000000;
+}
+
+/* Global */
+
+body 
+{
+  width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family:PT Sans;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight:400;
+  color:var(--basic-black);
+  background-color: var(--basic-white);
+}
+a {
+  text-decoration: none;
+  color:var(--basic-white);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+li {
+  list-style-type:none;
+}
+.main-header {
+  font-family:Cuprum;
+  font-size:18px;
+  background-color:var(--light-grey);
+}
+
+.logo {
+  background-color: var(--red);
+}
+
+.logo-navigation {
+  background-color:var(--dark-blue)
+}
+
+.button-order {
+  background-color:var(--green)
+}
+
+.false-caption {
+  font-size:16px;
+  line-height:23px;
+  color:var(--red);
+  font-style:italic;
+}
+
+.main-address {
+  font-size:14px; 
+  font-weight:400;
+  color:var(--blue);
+}
+
+.main-number {
+  font-size:21px;
+  color:var(--red);
+  font-weight:700;
+  border: 2px solid white; 
+}
+
+.cabinet {
+  font-size:21px;
+  color:var(--basic-black);
+  background-color:var(--basic-white);
+}
+
+.cabinet a {
+  color:var(--basic-black);
+}
+
+.main-navigation {
+  background-color:var(--blue);
+}
+
+.navigation-item 
+{
+  display:inline;
+}
+
+.main-caption {
+  display:none;
+}
+.promo {
+  font-family:Cuprum;
+  color:var(--basic-white);
+}
+
+.promo-caption {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700px; 
+  color:var(--basic-white);
+}
+
+.promo-item
+{
+background-repeat:no-repeat;
+}
+
+.materials
+{
+background-color:var(--orange);
+background-image: url(../img/svg/icon-materials.svg);
+}
+.instrument 
+{
+background-color:var(--light-blue);
+background-image: url(../img/svg/icon-instrument.svg);
+}
+.technics
+{
+background-color: var(--purple);
+background-image: url(../img/svg/icon-technics.svg);
+}
+.discount
+{
+background-color:var(--light-green);
+background-image: url(../img/svg/icon-basket.svg);
+}
+.delivery
+{
+background-color:var(--light-orange);
+background-image: url(../img/svg/icon-delivery.svg);
+}
+
+.slider {
+  background-image:url(../img/jpg/perforator.jpg);
+  background-repeat: no-repeat;
+}
+.slider-caption {
+  font-size: 36px;
+  font-weight:700;
+  color:var(--basic-white);
+}
+
+.promo-button {
+background-color:var(--basic-white);
+opacity:0.3;
+text-transform: uppercase;
+}
+
+.button {
+background-color:var(--red);
+text-transform: uppercase;
+}
+
+.new
+{
+background-color: var(--red);
+text-transform: uppercase;
+color:var(--basic-white);
+}
+
+.popular {
+  background-color:var(--light-brown);
+}
+.popular-caption {
+  font-size: 30px;
+  text-transform: uppercase;
+  color:var(--blue);
+}
+
+.popular-model-caption {
+  font-family:PT Sans;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.old-price {
+  color: var(--grey);
+  font-size: 17px;
+  font-family: PT Sans;
+  text-decoration: line-through;
+}
+.new-price { 
+  font-family: PT Sans;
+  color:var(--basic-white);
+  font-size: 17px;
+  font-weight: 700;
+  width: 123px;
+  height:38px;
+  background: var(--red);
+  border-radius: 4px;
+  position: relative;
+}
+.new-price::after {
+  content: ''; 
+  position: absolute; /* Абсолютное позиционирование */
+  left: 122px; bottom: 2px; /* Положение треугольника */
+  border: 17px solid transparent; /* Прозрачные границы */
+  border-left: 18px solid var(--red); /* Добавляю треугольник */   
+}
+
+.service {
+  background-color:var(--light-grey);
+}
+
+.info-caption
+{ font-family:Cuprum;
+  font-size:30px;
+  color:var(--basic-black);
+  text-transform: uppercase;
+}
+.service-item
+{
+  display:inline;
+  font-size: 21px;
+  font-weight:700;
+  font-family:Cuprum;
+  background-color: var(--blue);
+
+}
+.service-caption-item {
+  font-size: 30px;
+  font-family:Cuprum;
+  text-transform: uppercase;
+  color: var(--blue);
+}
+
+
+.company-caption {
+  display:none;
+}
+
+.features-item {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  list-style-image: url(../img/svg/line.svg); 
+}
+
+.main-footer {
+ font-size: 18px;
+ color:var(--basic-white)
+}
+
+.footer-navigation  {
+  background-color:var(--blue);
+}  
+
+.footer-social {
+  font-size: 16px;
+  line-height: 18px;
+  background-color:var(--dark-blue);
+}
+
+.footer-navigation-item {
+  display:inline;
+  font-size: 18px;
+}
+
+.footer-menu-item {
+  display:inline; 
+  color:var(--yellow);
+}
+
+.footer-menu-item a {
+  color:var(--yellow);
+}
+
+.footer-social {
+  background-color:var(--dark-blue);
+}
+
+.social-item {
+  display:inline;
+}
+
+.design {
+ color:var(--yellow); 
+}
+
+.feedback {
+ color:var(--yellow); 
+}
