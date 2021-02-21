@@ -1105,21 +1105,37 @@ fieldset {
   margin-right:15px;
 }
 
-.catalog-navigation-item {
-  display:inline;
-  border:1px solid var(--light-silver);
+.catalog-navigation-list {
+  margin:0; 
+  padding:0;
+}
+
+.catalog-navigation-list {
+  display: flex;
 }
 
 .catalog-navigation-item a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height:38px;
+  margin-right: 10px;
+  border:1px solid var(--light-silver);
   color:var(--basic-black);
   text-transform: uppercase;
 }
 
-.catalog-navigation-item: hover {
+.catalog-navigation-item a:last-of-type {
+  width:138px; /*не понимаю почему не срабатывает для последнего элемента,
+   может для inline-flex потому что*/
+ }
+
+.catalog-navigation-item a: hover {
   border-color: var(--silver)
 }
 
-.catalog-navigation-item:active {
+.catalog-navigation-item a:active {
   border-color: var(--red);
 }
 
@@ -1134,6 +1150,8 @@ fieldset {
   outline: 5px solid rgba(255, 0, 255, 0.7);
   outline-offset: -5px;
   margin:0 auto;
+  padding-top: 64px;
+  padding-bottom: 68px;
 }
 
 .article-tool-caption {
