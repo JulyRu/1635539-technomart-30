@@ -21,19 +21,24 @@
           <label for="search"></label>
           <input class="header-navigation-search" type="search" id="search" placeholder="Поиск:">
         </form>
-        <a class="header-navigation-markers" href="#">Закладки</a>
-        <a class="header-navigation-basket" href="#">Корзина</a>
+        <a class="header-navigation-markers" href="#">Закладки:</a>
+        <a class="header-navigation-basket" href="#">Корзина:</a>
         <a class="header-button-order" href="#">Оформить заказ</a>
       </div>
     </div>
     <div class="header-information">
-      <p class="header-false-caption">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+      <div class="header-false-caption">Интернет-магазин строительных материалов и инструментов для ремонта</div>
       <div class="header-address-block">
         <a class="header-information-number" href="tel:+7812555055">+7 (812) 555-05-55</a>
         <address class="header-information-address">г. Санкт-Петербург, ул. Б.Конюшенная д.19/8</address>
       </div>
       <div class="header-cabinet">
-        <a class="header-cabinet-enter" href="#">Войти</a>
+        <a class="header-cabinet-enter" href="#">
+          <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.1667 8.5L5.71429 0V6H0V11H5.71429V17L14.1667 8.5Z" />
+            <path d="M16.177 15.01H11.3894V17H16.177C18.2513 17 19.038 15.19 19.0618 13.974V3.028C19.038 1.811 18.2513 0 16.177 0H11.3894V1.99H16.177C16.9761 1.99 17.1218 2.671 17.1389 3.047V13.951C17.1227 14.327 16.9761 15.01 16.177 15.01Z" />
+          </svg>Войти
+        </a>
         <a class="header-cabinet-registration" href="#">Регистрация</a>
       </div>
     </div>
@@ -57,7 +62,7 @@
         <li  class="promo-item promo-item-materials">
           <h3  class="promo-caption">Материалы</h3>
           <a class="promo-button" href="#">На любой вкус</a>
-          <p class="new">new</p>
+          <p class="card-novelty">new</p>
         </li>         
         <li class="promo-item promo-item-instrument">
           <h3 class="promo-caption">Инструмент</h3>
@@ -77,7 +82,7 @@
         </li>
         <li class="promo-item promo-item-slider">
           <h3 class="promo-slider-caption">Перфораторы</h3>
-          <p>Настоящие мужские игрушки</p>
+          <p class="promo-slider-description">Настоящие мужские игрушки</p>
           <a class="button" href="#">Открыть каталог</a>
         </li>
       </ul> 
@@ -177,7 +182,7 @@
         <h2 class="service-caption">СЕРВИСЫ</h2>
         <p class="service-description">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
       </div>
-      <div class="service-menu">
+      <div class="service-purpose">
         <ul class="service-list">
           <li class="service-item">
             <a href="#">Доставка</a>
@@ -189,15 +194,12 @@
             <a href="#">Кредит</a>
           </li>
         </ul>
-      </div>
-      <div class="service-purpose">
         <ul class="service-purpose-list">
           <li class="service-purpose-item">
             <div class="service-purpose-caption">
               <h3>Доставка</h3>
-              <p class="service-purpose-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо зарабатываем, поднимая его на ваш этаж!</p>
+              <p class="service-purpose-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!<br> Ведь мы неплохо зарабатываем,<br> поднимая его на ваш этаж!</p>
             </div>
-            <img src="img/png/delivery.png" width="468" height="261" alt="Доставка">
           </li>
         </ul>
       </div>
@@ -272,7 +274,8 @@
     </div>
     <div class="footer-social">
       <div class="footer-social-bar">
-        <p>&#169;2010-2019 Компания "Техномарт" Все права защищены</p>
+        <p class="footer-social-info">&#169;2010-2019 Компания "Техномарт" 
+          <br>Все права защищены</p>
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="footer-social-button" href="#">
@@ -296,12 +299,12 @@
             </a>
           </li>
         </ul>
-      <div class="footer-social-creator">
-        <p class="footer-feedback">Обратная связь:
-          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </p>
-        <p class="footer-developer">Разработано -
-          <a href="www.htmlacademy.ru">htmlacademy.ru</a>
+        <div class="footer-social-creator">
+          <p class="footer-feedback">Обратная связь:
+            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </p>
+          <p class="footer-developer">Разработано -
+            <a href="www.htmlacademy.ru">htmlacademy.ru</a>
           </p>
         </div>
       </div>
