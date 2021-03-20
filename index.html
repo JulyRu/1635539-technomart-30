@@ -20,7 +20,6 @@
           </a>
           <form class="header-search" action="#" method="get">
             <label for="search"><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g opacity="0.3">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="white"/>
               </g>
             </svg></label>
@@ -92,9 +91,18 @@
             <a class="promo-button" href="#">Бесплатно</a>
           </li>
           <li class="promo-item promo-item-slider">
-            <h3 class="promo-slider-caption">Перфораторы</h3>
-            <p class="promo-slider-description">Настоящие мужские игрушки</p>
-            <a class="button" href="#">Открыть каталог</a>
+            <ul class="promo-slider-list">
+              <li class="promo-slider-perforator-active">
+                <h3 class="promo-slider-caption">Перфораторы</h3>
+                <p class="promo-slider-description">Настоящие мужские игрушки</p>
+                <a class="button" href="#">Открыть каталог</a>
+              </li>
+               <li class="promo-slider-drill">
+                <h3 class="promo-slider-caption">Дрели</h3>
+                <p class="promo-slider-description">Соседям на радость</p>
+                <a class="button" href="#">Открыть каталог</a>
+              </li>
+            </ul>
             <button class="slider-button-left" type="submit">
               <svg width="22" height="40" viewBox="0 0 22 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M19.9244 0.941406L21.9226 2.98921L4.90699 20.436L21.978 37.9375L19.9789 39.9853L0.910645 20.436L19.9244 0.941406Z" fill="white"/>
@@ -239,9 +247,17 @@
             </li>
           </ul>
           <ul class="service-purpose-list">
-            <li class="service-purpose-item">
+            <li class="service-purpose-item service-purpose-delivery">
               <h3>Доставка</h3>
               <p class="service-purpose-description">Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно!<br> Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
+            </li>
+            <li class="service-purpose-item service-purpose-guarantee">
+              <h3>Гарантия</h3>
+              <p class="service-purpose-description">Если купленный товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший прибор на новый. Дом уж восстановите как-нибудь сами.</p>
+            </li>
+            <li class="service-purpose-item service-purpose-credit-active">
+              <h3>Кредит</h3>
+              <p class="service-purpose-description">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
             </li>
           </ul>
         </div> 

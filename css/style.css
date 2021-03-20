@@ -181,22 +181,27 @@ fieldset {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
+  position: relative;
 }
-
-.header-search input:active ~ label svg {
-  fill:red;
-}
-
 
 .header-search  label {
-  padding:0 5px 0 17px;
+/*  padding:0 5px 0 17px;*/
+position: absolute;
+top:5px;
+left:17px;
 }
 
 .header-navigation-search {
+  box-sizing: border-box;
   background-color: var(--dark-blue);
   border:none;
   width:230px; 
   height: 42px;
+}
+
+input[type=search] {
+  padding-left: 42px;
+  height: 42px;   
 }
 
 input[type="search"]::placeholder {
@@ -461,7 +466,7 @@ input[type="search"]:focus::placeholder {
   margin:0;
 }
 
-.promo-item {
+.promo-item:not(:last-of-type) {
   box-sizing:border-box; 
   width: 300px;
   display: flex;
@@ -476,7 +481,9 @@ position: relative;
 }
 
 .promo-item:last-of-type {
-  padding:26px 356px 24px 24px;
+  box-sizing:border-box; 
+  width: 620px;
+    /*padding:26px 356px 24px 24px;*/
 }
 
 .promo-item .card-novelty {
@@ -553,12 +560,38 @@ position: relative;
 
 .promo-item-slider {
   width:620px;
-  background-image:url(../img/jpg/perforator.jpg);
-  background-repeat: no-repeat;
   grid-column:1/3;
   grid-row:2/4; 
   position:relative;
 }
+.promo-slider-list {
+  padding: 0;
+  margin:0;
+}
+
+.promo-slider-perforator-active {
+  width:620px;
+  height:266px;
+  background-image:url(../img/jpg/perforator.jpg);
+  background-repeat: no-repeat;
+
+}
+
+.promo-slider-perforator {
+  display: none;
+}
+
+.promo-slider-drill {
+  display:none;
+}
+
+.promo-slider-drill-active {
+  width:620px;
+  height:266px;
+  background-image:url(../img/jpg/drill.jpg);
+  background-repeat: no-repeat;
+}
+
 
 .promo-slider-caption {
   font-size: 36px;
@@ -890,26 +923,25 @@ position: relative;
   left:230px;
 }
 
-.service-item {
+.service-item a {
+  display: block;
   font-size: 21px;
   font-weight:700;
   font-family:Cuprum, "Arial", sans-serif;
   background-color: var(--blue);
   padding:17.5px 22px 20.5px 22px;
   box-shadow:inset 0px 1px 0px 0px var(--midnight);
- /* box-shadow :inset 0px 1px 0px 0px #405069;
-    filter: drop-shadow(0 1px 0 0 #293449);*/
 }
 
-.service-item:hover {
+.service-item a:hover {
   background-color: var(--dark-blue); 
 }
 
-.service-item:active {
-  background-color: var(--basic-white); 
+.service-item a:active {
+  background-color: var(--basic-white);
 } 
 
-.service-item a:active {
+.service-item:active a {
   color:var(--blue);
 }
 
@@ -919,10 +951,32 @@ position: relative;
   position: relative;
 }
 
-.service-purpose-list:after {
+.service-purpose-delivery-active:after {
   content:"";
   position: absolute;
   background-image: url(../img/png/delivery.png);
+  width:468px;
+  height:261px;
+  top:17px;
+  right:0;
+  overflow: hidden;
+}
+
+.service-purpose-guarantee-active:after {
+  content:"";
+  position: absolute;
+  background-image: url(../img/png/guarantee.png);
+  width:468px;
+  height:261px;
+  top:17px;
+  right:0;
+  overflow: hidden;
+}
+
+.service-purpose-credit-active:after {
+  content:"";
+  position: absolute;
+  background-image: url(../img/png/credit.png);
   width:468px;
   height:261px;
   top:17px;
@@ -948,6 +1002,32 @@ position: relative;
 .service-purpose-item { 
   padding: 0 189px 0 80px;*/
 }
+
+.service-purpose-delivery {
+  display: none;
+}
+
+.service-purpose-guarantee {
+  display: none;
+}
+
+.service-purpose-credit {
+  display: none;
+}
+
+.service-purpose-delivery-active {
+  display: block;
+}
+
+.service-purpose-guarantee-active {
+  display: block;
+}
+
+.service-purpose-credit-active {
+  display:block;
+}
+
+
 
 /* Company */
 
@@ -1207,7 +1287,11 @@ position: relative;
   margin-right:51px;
 }
 
-.footer-feedback:active {
+.footer-feedback a:hover {
+  text-decoration: underline; 
+}
+
+.footer-feedback a:active {
   color:var(--red); 
 }
 
@@ -1217,7 +1301,11 @@ position: relative;
   margin:0; padding:0;
 }
 
-.footer-developer:active {
+.footer-developer a:hover {
+  text-decoration: underline; 
+}
+
+.footer-developer a:active {
   color:var(--red); 
 }
 
