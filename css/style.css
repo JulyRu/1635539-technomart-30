@@ -185,17 +185,25 @@ fieldset {
 }
 
 .header-search  label {
-/*  padding:0 5px 0 17px;*/
-position: absolute;
-top:5px;
-left:17px;
+  position: absolute;
+  top:10px;
+  left:17px;
+  color:white;
+  opacity: 0.3;
+}
+.header-search:hover label {
+  opacity: 1;
+}
+
+.header-search:focus label {
+  color:red;
 }
 
 .header-navigation-search {
   box-sizing: border-box;
   background-color: var(--dark-blue);
   border:none;
-  width:230px; 
+  width:270px; 
   height: 42px;
 }
 
@@ -459,31 +467,20 @@ input[type="search"]:focus::placeholder {
 
 .promo-list {
   display: grid;
-  grid-template-columns: min-content min-content min-content;
-  grid-template-rows:min-content min-content min-content;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows:repeat(3,1fr);
   grid-gap: 20px 20px;
   padding:0;
   margin:0;
 }
 
-.promo-item:not(:last-of-type) {
-  box-sizing:border-box; 
-  width: 300px;
+.promo-item {
   display: flex;
   flex-direction: column;
   background-repeat:no-repeat; 
   overflow:hidden;
   padding: 24px 142px 23px 23px;
-}
-
-.promo-item:not(:last-of-type) {
-position: relative;
-}
-
-.promo-item:last-of-type {
-  box-sizing:border-box; 
-  width: 620px;
-    /*padding:26px 356px 24px 24px;*/
+  position: relative;
 }
 
 .promo-item .card-novelty {
@@ -497,7 +494,7 @@ position: relative;
   font-weight: 700; 
   color:var(--basic-white);
   margin:0;
-  padding: :0;
+  padding:0;
 }
 
 .promo-button {
@@ -559,39 +556,42 @@ position: relative;
 }
 
 .promo-item-slider {
-  width:620px;
   grid-column:1/3;
   grid-row:2/4; 
-  position:relative;
+  position: relative;
 }
 .promo-slider-list {
-  padding: 0;
-  margin:0;
+  padding:0;
+  margin:0; 
+  width:100%;
+  height:100%;
 }
 
-.promo-slider-perforator-active {
-  width:620px;
-  height:266px;
-  background-image:url(../img/jpg/perforator.jpg);
-  background-repeat: no-repeat;
+.promo-slider-item {
+  display: none;
+  width:100%;
+  height:100%;
+}
 
+.promo-slider-item-active {
+  display:block;
 }
 
 .promo-slider-perforator {
-  display: none;
-}
-
-.promo-slider-drill {
-  display:none;
-}
-
-.promo-slider-drill-active {
-  width:620px;
-  height:266px;
-  background-image:url(../img/jpg/drill.jpg);
+  width:100%;
+  height: 100%;
+  padding:26px 356px 24px 24px;
+  background-image:url(../img/jpg/perforator.jpg);
   background-repeat: no-repeat;
 }
 
+.promo-slider-drill {
+  width:100%;
+  height: 100%;
+  padding:26px 356px 24px 24px;
+  background-image:url(../img/jpg/drill.jpg);
+  background-repeat: no-repeat;
+}
 
 .promo-slider-caption {
   font-size: 36px;
@@ -945,13 +945,18 @@ position: relative;
   color:var(--blue);
 }
 
+.service-item-active a {
+  color:var(--blue);
+   background-color: var(--basic-white);
+}
+
 .service-purpose-list {
   margin:0;
   padding:0;
   position: relative;
 }
 
-.service-purpose-delivery-active:after {
+.service-purpose-delivery:after {
   content:"";
   position: absolute;
   background-image: url(../img/png/delivery.png);
@@ -962,7 +967,7 @@ position: relative;
   overflow: hidden;
 }
 
-.service-purpose-guarantee-active:after {
+.service-purpose-guarantee:after {
   content:"";
   position: absolute;
   background-image: url(../img/png/guarantee.png);
@@ -973,7 +978,7 @@ position: relative;
   overflow: hidden;
 }
 
-.service-purpose-credit-active:after {
+.service-purpose-credit-:after {
   content:"";
   position: absolute;
   background-image: url(../img/png/credit.png);
@@ -999,35 +1004,14 @@ position: relative;
   padding: 0;
 }
 
-.service-purpose-item { 
-  padding: 0 189px 0 80px;*/
-}
-
-.service-purpose-delivery {
+.service-purpose-item {
   display: none;
 }
 
-.service-purpose-guarantee {
-  display: none;
-}
-
-.service-purpose-credit {
-  display: none;
-}
-
-.service-purpose-delivery-active {
+.service-purpose-item-active {
   display: block;
+  padding: 0 189px 0 80px;
 }
-
-.service-purpose-guarantee-active {
-  display: block;
-}
-
-.service-purpose-credit-active {
-  display:block;
-}
-
-
 
 /* Company */
 
