@@ -1669,20 +1669,17 @@ input[type="search"]:focus::placeholder {
 }
 
 
-.filter-button {
-  border:1px solid var(--light-silver);
-  display: flex;
-  justify-content: center;
-  padding-top: 10px;
-  padding-bottom:10px;
-}
-
 .filter-button-show {
   border:none; 
   outline: none;
   background-color:var(--basic-white);
   text-transform: uppercase;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom:10px;
+  width:218px;
+  border:1px solid var(--light-silver);
 }
 
 /*Sorting*/
