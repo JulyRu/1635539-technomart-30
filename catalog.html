@@ -22,7 +22,6 @@
             <label for="search">
               <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="currentColor";/>
-                </g>
               </svg>
             </label>
             <input class="header-navigation-search" type="search" id="search" placeholder="Поиск:">
@@ -140,7 +139,7 @@
                   <input class="visually-hidden filter-input-radio" type="radio" id="filter-form-supply-power" value="аккумуляторные">
                   <label for="filter-form-supply-power">сетевые</label>
                 </fieldset>
-                  <button class="filter-button-show" type="button">Показать</button>
+                  <button class="filter-button-show" type="submit">Показать</button>
               </form> 
           </div>
           <div class="catalog-products">
@@ -211,6 +210,7 @@
                   </div>
                   <p class="card-old-price">30500 Р.</p>
                   <p class="card-new-price">25500 Р.</p>
+                  <p class="card-novelty">new</p>
                 </li>
                 <li class="products-card-item">
                   <h3 class="card-caption">Перфоратор BOSCH BFG 3000</h3>
@@ -258,6 +258,7 @@
                   <div class="card-buttons">
                     <a class="card-button-buy" href="#">Купить</a>
                     <a class="card-button-markers" href="#">В закладки</a>
+                    <p class="card-novelty">new</p>
                   </div>
                   <p class="card-old-price">22500 Р.</p>
                   <p class="card-new-price">15500 Р.</p>
@@ -410,21 +411,21 @@
 
 
   <section class="modal modal-add">
-  <h2 class="visually-hidden">Добавлен в корзину</h2>
-  <div class="decoration-line"></div>
-  <div class="add-case">
-    <div class="add-case-done">
-      <svg width="40" height="30" viewBox="0 0 40 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M35.641 1.066C35.2498 0.677261 34.6181 0.677261 34.227 1.066L15.788 19.504C15.3968 19.8927 14.7651 19.8927 14.374 19.504L6.23396 11.365C5.84278 10.9763 5.21114 10.9763 4.81996 11.365L1.28496 14.9C0.896225 15.2912 0.896225 15.9228 1.28496 16.314L14.374 29.404C14.7651 29.7927 15.3968 29.7927 15.788 29.404L19.324 25.868L20.738 24.454L39.176 6.016C39.5647 5.62481 39.5647 4.99318 39.176 4.602L35.641 1.066Z" fill="white"/>
-      </svg>
+    <h2 class="visually-hidden">Добавлен в корзину</h2>
+    <div class="decoration-line"></div>
+    <div class="add-case">
+      <div class="add-case-done">
+        <svg width="40" height="30" viewBox="0 0 40 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M35.641 1.066C35.2498 0.677261 34.6181 0.677261 34.227 1.066L15.788 19.504C15.3968 19.8927 14.7651 19.8927 14.374 19.504L6.23396 11.365C5.84278 10.9763 5.21114 10.9763 4.81996 11.365L1.28496 14.9C0.896225 15.2912 0.896225 15.9228 1.28496 16.314L14.374 29.404C14.7651 29.7927 15.3968 29.7927 15.788 29.404L19.324 25.868L20.738 24.454L39.176 6.016C39.5647 5.62481 39.5647 4.99318 39.176 4.602L35.641 1.066Z" fill="white"/>
+        </svg>
+      </div>
+      <p>Товар добавлен в корзину!</p> 
     </div>
-    <p>Товар добавлен в корзину!</p> 
-  </div>
-  <div class="add-button">
-    <a class="button" href="#">Оформить заказ</a>
-    <a class="button" href="#">Продолжить покупки</a>
-  </div>
-  <button class="modal-close" aria-label="Закрыть" type="button"></button>
+    <div class="add-button">
+      <a class="button" href="#">Оформить заказ</a>
+      <a class="button" href="#">Продолжить покупки</a>
+    </div>
+    <button class="modal-close" aria-label="Закрыть" type="button"></button>
   </section>
 
 
