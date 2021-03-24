@@ -15,6 +15,7 @@
   --light-brown: #f9f5f0;
   --light-gray: #f1f5f7;
   --basic-white: #fff;
+  --dark-white: #f4f4f4;
   --basic-black: #000;
   --dark-red: #ba2732;
   --silver: #c5c5c5;
@@ -188,7 +189,7 @@ img {
   align-items: center;
 }
 
-.header-navigation-logo:active {
+.header-navigation-logo[href]:active {
   background-color: var(--dark-red);
 }
 
@@ -1462,6 +1463,10 @@ img {
   align-items: center;
 }
 
+.footer-navigation-logo[href]:active {
+  background-color: var(--dark-red);
+}
+
 .footer-navigation-item {
   display: inline;
 
@@ -2434,7 +2439,7 @@ img {
 .feedback-bottom {
   padding: 38px 80px 38px 80px;
 
-  background-color: #f4f4f4;
+  background-color: var(--dark-white);
 }
 
 .feedback-input {
