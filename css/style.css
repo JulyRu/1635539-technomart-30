@@ -272,7 +272,8 @@ img {
   background-repeat: no-repeat;
 }
 
-.header-navigation-markers:hover::before {
+.header-navigation-markers:hover::before,
+.header-navigation-markers:focus::before {
   opacity: 1;
 }
 
@@ -311,7 +312,8 @@ img {
   background-repeat: no-repeat;
 }
 
-.header-navigation-basket:hover::before {
+.header-navigation-basket:hover::before,
+.header-navigation-basket:focus::before {
   opacity: 1;
 }
 
@@ -334,7 +336,8 @@ img {
   align-items: center;
 }
 
-.header-button-order:hover {
+.header-button-order:hover,
+.header-button-order:focus {
   background-color: var(--dark-green);
 }
 
@@ -451,7 +454,9 @@ img {
 }
 
 .header-cabinet-enter:hover,
-.header-cabinet-registration:hover {
+.header-cabinet-registration:hover,
+.header-cabinet-enter:focus,
+.header-cabinet-registration:focus {
   color: var(--red);
 }
 
@@ -462,7 +467,8 @@ img {
   fill: var(--silver);
 }
 
-.header-cabinet-enter:hover svg {
+.header-cabinet-enter:hover svg,
+.header-cabinet-enter:focus svg {
   fill: var(--sapphire);
 }
 
@@ -535,7 +541,8 @@ img {
   background-color: var(--red);
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
   background-color: var(--maroon);
 }
 
@@ -606,7 +613,8 @@ img {
   background-color: rgba(255, 255, 255, .3);
 }
 
-.promo-button:hover {
+.promo-button:hover,
+.promo-button:focus {
   background-color: rgba(197, 197, 197, .3);
 }
 
@@ -803,7 +811,8 @@ img {
   align-items: center;
 }
 
-.products-card-item:hover {
+.products-card-item:hover,
+.products-card-item:focus {
   box-shadow: -1px 2px 10px 4px var(--zircon);
 }
 
@@ -827,7 +836,8 @@ img {
   margin-left: -15px;
 }
 
-.products-card-item:hover .card-image {
+.products-card-item:hover .card-image,
+.products-card-item:focus .card-image {
   display: none;
 }
 
@@ -835,7 +845,8 @@ img {
   display: none;
 }
 
-.products-card-item:hover .card-buttons {
+.products-card-item:hover .card-buttons,
+.products-card-item:focus .card-buttons {
   display: flex;
 }
 
@@ -900,7 +911,8 @@ img {
   background-repeat: no-repeat;
 }
 
-.card-button-buy:hover {
+.card-button-buy:hover,
+.card-button-buy:focus {
   background-color: var(--dark-green);
 }
 
@@ -926,7 +938,8 @@ img {
   align-items: center;
 }
 
-.card-button-markers:hover {
+.card-button-markers:hover,
+.card-button-markers:focus {
   border-color: var(--blue);
 }
 
@@ -1070,7 +1083,8 @@ img {
   align-items: center;
 }
 
-.brand-item a:hover {
+.brand-item a:hover,
+.brand-item a:focus {
   box-shadow: -1px 2px 10px 4px var(--zircon);
 }
 
@@ -1160,7 +1174,8 @@ img {
   background-color: var(--blue);
 }
 
-.service-item a:hover {
+.service-item a:hover,
+.service-item a:focus {
   background-color: var(--dark-blue);
 }
 
@@ -1172,7 +1187,9 @@ img {
   color: var(--blue);
 }
 
-.service-item-active a {
+.service-item-active a,
+.service-item-active a:hover,
+.service-item-active a:focus {
   color: var(--blue);
   background-color: var(--basic-white);
   box-shadow: none;
