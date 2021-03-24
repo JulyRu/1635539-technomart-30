@@ -107,6 +107,7 @@ body {
   font-weight: 400;
   color: var(--basic-black);
   background-color: var(--basic-white);
+  min-width: 960px;
 }
 
 a {
@@ -122,7 +123,7 @@ img {
 .container {
   width: 940px;
   margin: 0 auto;
-  padding: 0 0px;
+  padding: 0 10px;
 }
 
 .section {
@@ -151,6 +152,7 @@ img {
 }
 
 .header-navigation-top {
+  position:relative;
   background-color: var(--dark-blue)
 }
 
@@ -231,7 +233,7 @@ img {
 }
 
 .header-navigation-markers::before {
-  content: '';
+  content: "";
   display: block;
   position: absolute; 
   width: 14px;
@@ -259,7 +261,7 @@ img {
 }
 
 .header-navigation-basket::before {
-  content: '';
+  content: "";
   display: block;
   position: absolute; 
   width: 15px;
@@ -302,7 +304,7 @@ img {
 
 .header-navigation-bottom {
   background-color: var(--light-gray);
-  padding: 46px 0 60px 0;
+  padding: 44px 0 60px 0;
 }
 
 .header-information {
@@ -335,11 +337,11 @@ img {
   font-weight: 700;
   border: 3px solid white;
   position: relative;
-  padding: 7px 45px 8px 72px;
+  padding: 8px 45px 8px 72px;
 }
 
 .header-information-number::before {
-  content: '';
+  content: "";
   display: block;
   position: absolute; 
   width: 17.5px;
@@ -421,7 +423,7 @@ img {
 
 .header-contents-item a {
   display: block;
-  padding-top: 16px;
+  padding-top: 17px;
   padding-bottom: 20px;
   padding-right: 28px;
   padding-left: 28px; 
@@ -438,7 +440,7 @@ img {
 /*Body Main*/
 
 .page-main {
-  margin-top: 21px;
+  margin-top: 30px;
   display: grid;
   grid-template-rows: min-content min-content min-content min-content min-content;
 }
@@ -491,7 +493,7 @@ img {
   flex-direction: column;
   background-repeat: no-repeat; 
   overflow: hidden;
-  padding: 24px 142px 23px 23px;
+  padding: 24px 142px 23px 22px;
   position: relative;
 }
 
@@ -514,9 +516,9 @@ img {
   background-color: rgba(255, 255, 255, 0.3);
   text-transform: uppercase;
   width: 123px;
-  padding: 6px 3px;
+  padding: 7px 5px;
   text-align: center;
-  margin-top: 16px;
+  margin-top: 14px;
 }
 
 .promo-button:hover {
@@ -620,8 +622,8 @@ img {
   font-weight: 400;
   font-family: Cuprum, "Arial", sans-serif;
   color: var(--basic-white);
-  margin-top: 17px;
-  margin-bottom: 110px;
+  margin-top: 15px;
+  margin-bottom: 111px;
 }
 
 .promo button {
@@ -649,7 +651,7 @@ img {
   margin-bottom: 11px;
 }
 
-.popular-caption-block {
+.popular-products .popular-caption-block {
   background-color: var(--light-brown);
   display: flex;
   justify-content: space-between;
@@ -734,7 +736,7 @@ img {
   line-height: 20px;
   font-weight: 700;
   text-align: center;
-  margin: 0 0 7px 0;
+  margin: 0 0 4px 0;
   padding: 0 10px;
 }
 
@@ -754,7 +756,7 @@ img {
 }
 
 .card-button-buy::before {
-  content: '';
+  content: "";
   display: block;
   position: absolute; 
   width: 15px;
@@ -852,7 +854,16 @@ img {
 /*Brands*/
 
 .popular-brands {
-  margin-bottom: 40.5px;
+  margin-bottom: 43.5px;
+}
+
+.popular-brands .popular-caption-block {
+  background-color: var(--light-brown);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 24px 19px 24px 28px;
+  margin-bottom: 20px;
 }
 
 .brand-list {
@@ -981,7 +992,7 @@ img {
   background-image: url(../img/png/delivery.png);
   width: 468px;
   height: 261px;
-  top: 17px;
+  top: 19px;
   right: 0;
   overflow: hidden;
 }
@@ -1101,7 +1112,7 @@ img {
   top: 10px;
   width: 25px;
   height: 2px;
-  background: url('../img/svg/line.svg');
+  background: url("../img/svg/line.svg");
 }
 
 .company-contacts {
@@ -1432,7 +1443,7 @@ img {
 }
 
 .bread-crumbs-item:not(:first-of-type)::before {
-  content: '';
+  content: "";
   position: absolute; 
   width: 6.5px;
   height: 10.3px;
@@ -1487,16 +1498,21 @@ img {
 }
 
 .filter-fieldset-firm .filter-category-caption {
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
 .filter-fieldset-supply .filter-category-caption {
-   margin-bottom: 26px;
+  margin-bottom: 26px;
 }
 
-.filter-fieldset-range {
+/*.filter-fieldset-range {
   width: 100%;
+  margin-bottom: 10px;
 }
+
+.filter-fieldset-firm {
+  margin-bottom: 50px;
+}*/
 
 .visually-hidden {
   position: absolute;
@@ -1599,11 +1615,13 @@ img {
   left: -35px;
 }
 
-.filter-input-radio:hover + label::before {
+.filter-input-radio:hover + label::before, 
+.filter-input-radio:focus + label::before {
  border-color:var(--dark-zircon);
 }
 
-.filter-input-checkbox:hover + label::before {
+.filter-input-checkbox:hover + label::before, 
+.filter-input-checkbox:focus + label::before{
  border-color:var(--dark-zircon);
 }
 
